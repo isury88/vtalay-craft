@@ -1,0 +1,14 @@
+{% macro nav_is_active(segment) %}{% if craft.request.firstSegment == segment %}true{% else %}false{% endif %}{% endmacro %}
+
+{% macro icon(name) %}
+    <svg class="icon" aria-hidden="true" role="presentation">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#{{ name }}"></use>
+    </svg>
+{% endmacro %}
+
+{% macro phone(number) %}{{ number|replace({
+        ' ': '',
+        '-': '',
+        '(': '',
+        ')': ''
+    }) }}{% endmacro %}

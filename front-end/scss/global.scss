@@ -1,0 +1,48 @@
+/*----------------------------------------------*\
+    BOOTSTRAP
+\*----------------------------------------------*/
+@import "bootstrap/bootstrap-settings";
+@import "bootstrap/bootstrap-imports";
+
+/*----------------------------------------------*\
+    GENESIS
+\*----------------------------------------------*/
+@import "variables";
+@import "animations";
+
+// Vendors
+// @import "vendors/example";
+
+// Mixins
+@import "mixins/font-size";
+@import "mixins/hover";
+@import "mixins/placeholder";
+@import "mixins/word-wrap";
+
+// Helpers
+@import "helpers/transitions";
+
+// Components
+// @import "components/breakpoint-helper";
+@import "components/masthead";
+@import "components/home-cards";
+@import "components/image-gallery";
+
+
+// Layouts
+@import "layouts/site-head";
+@import "layouts/site-foot";
+
+// Z-index rules
+@import "z-index";
+
+/*------------------------------------*\
+    GLOBAL STYLES
+\*------------------------------------*/
+
+html {
+    font-size: $root-font-size;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

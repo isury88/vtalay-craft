@@ -1,0 +1,25 @@
+/*----------------------------------------------------*\
+    BOOTSTRAP: SETTINGS
+
+    Use this file to override Bootstrap's
+    default variables.
+
+    See node_modules/bootstrap/scss/_variables.scss
+    for a complete list of available variables.
+\*----------------------------------------------------*/
+.container {
+  max-width: 1200px!important;
+}
+
+.btn-primary {
+  color: #f1f1f0!important;
+  font-weight: 800;
+  border: none!important;
+  background-color: #091d36!important;
+}
+
+.btn-primary:hover {
+  color: #091d36!important;
+  border: none!important;
+  background-color: #c2d2e9!important;
+}

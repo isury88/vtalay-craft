@@ -1,0 +1,28 @@
+/*-------------------------------------------------*\
+    VARIABLES
+
+    Use this file to store any non-Bootstrap
+    variables.
+
+    Do not try to override default Bootstrap
+    variables in this file. That won't work.
+\*-------------------------------------------------*/
+
+// Typography
+$root-font-size: 18px;
+$base-font: 'Rammetto One', cursive;
+$secondary-font: 'Fjalla One', sans-serif;
+$third-font: 'Acme', sans-serif;
+
+
+//Colors
+$base-cl: #091d36;
+$primary-cl: #3a4e7a;
+$secondary-cl: #5e83ba;
+$third-cl: #c2d2e9;
+
+$white: #f1f1f0;
+
+//Alpha Colors
+$base-cl-alpha: rgba(9,29,54,.5);
+$secondary-cl-alpha: rgba(9,29,54,.5);

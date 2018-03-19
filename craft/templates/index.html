@@ -1,0 +1,12 @@
+{% extends "_layout/base.html" %}
+
+{% set page = 'home' %}
+
+{% block content %}
+
+    <div class="container">
+        {% include "_partials/home-cards.html" %}
+        {% include "_partials/image-gallery.html" %}
+    </div>
+
+{% endblock %}

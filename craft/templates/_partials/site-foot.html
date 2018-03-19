@@ -1,0 +1,38 @@
+{% set pages = craft.entries.section('pages') %}
+{% import "_macros" as macros %}
+
+<footer class="site-foot container-fluid" role="contentinfo">
+
+  <div class="row [ site-foot__max-width ] [ site-foot__bottom-border ] justify-content-between">
+    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-3 [ site-foot__auto-width ] pt-4"><a class="navbar-brand" href="{{ siteUrl }}">VTALAY</a></div>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-9  pt-4 [ site-foot__auto-width ]">
+      <ul class="site-foot__links text-right">
+        {% for item in pages %}
+        <li><a href="{{item.url}}">{{item.title}}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="row site-foot__max-width">
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 pt-4">
+      <ul class="site-foot__contact-info [ site-foot__no-padding ]">
+        <li>Moo Thappraya Road</li>
+        <li>20150 Moo Thappraya Road chonbury</li>
+        <li>Highlights info row image</li>
+        <li class="site-foot__tel"><a href="callto:0039 329 786 4671"> +39 329 786 4671</a></li>
+      </ul>
+    </div>
+    <div class="col-4 pt-4">
+
+    </div>
+    <div class="col-4 pt-4">
+
+    </div>
+  </div>
+
+  <div class="row [ site-foot__max-width ] justify-content-end">
+    <span>Website by Riccardo Venturini</span>
+  </div>
+</footer>

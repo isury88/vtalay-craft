@@ -1,0 +1,72 @@
+.site-foot {
+  background-color: $primary-cl;
+  width: 100vw;
+  font-size: 14px;
+  font-family: "Fjalla One",sans-serif;
+
+  &__auto-width {
+    width: auto;
+  }
+
+  &__no-padding {
+    padding-left: 0;
+  }
+
+  &__bottom-border {
+    border-bottom: 2px solid $secondary-cl;
+  }
+
+  h1 {
+    color: $white;
+    font-size: 25px;
+  }
+
+  span {
+    color: $white;
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: 10px;
+  }
+
+  &__max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  p {
+    color: $white;
+  }
+
+  &__links {
+    li {
+      display: inline-block;
+      a {
+          color: $white;
+          padding:10px;
+        }
+      a:hover {
+        color: $base-cl;
+        text-decoration: none;
+      }
+
+    }
+  }
+
+&__contact-info {
+  color: $white;
+  list-style: none;
+
+  @include media-breakpoint-only(xs) {
+    font-size: 10px;
+  }
+}
+
+&__tel {
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+}

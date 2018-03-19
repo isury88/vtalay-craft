@@ -1,0 +1,55 @@
+.masthead {
+  margin-top: 100px;
+  width: auto;
+  height: 100vh;
+  background: linear-gradient(to right bottom, $base-cl-alpha, $secondary-cl-alpha), url('/assets/images/pattaya_beach_main_mini.jpg') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  // background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -1;
+
+  // clip-path:polygon(0 0, 100% 0, 100% 200px, 0 100%);
+
+  @include media-breakpoint-down(md) {
+    height: 100vh;
+    background-position: bottom right;
+  }
+
+  &__h1 {
+    letter-spacing: 5px;
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+    top: 25vh;
+    color: $white;
+    font-weight: 600;
+    // font-family: $base-font;
+    // font-family: $secondary-font;
+    font-family: $third-font;
+    text-transform: uppercase;
+    z-index: 99999;
+
+    @include media-breakpoint-only(xs) {
+      top:15vh;
+      font-size: 40px;
+      margin: 0 50px;
+    }
+
+    @include media-breakpoint-only(sm) {
+      top:15vh;
+      font-size: 50px;
+      margin: 0 50px;
+    }
+
+    @include media-breakpoint-only(md) {
+      top:33vh;
+      font-size: 50px;
+      margin: 0 30px;
+    }
+  }
+}

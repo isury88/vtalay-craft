@@ -1,0 +1,25 @@
+{% set pages = craft.entries.section('pages') %}
+{% import "_macros" as macros %}
+
+
+<header class="site-head fixed-top" role="banner">
+    <div class="container-fluid [ site-head__padding ]">
+        <nav class="navbar navbar-expand-lg [ site-head__nav ]">
+          <a class="navbar-brand" href="{{ siteUrl }}">VTALAY</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-selected="{{ macros.nav_is_active(item.slug) }}" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a href="#menu" class="box-shadow-menu">
+            </a>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              {% for item in pages %}
+              <li class="nav-item">
+                <a class="nav-link" href="{{item.url}}">{{item.title}}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+</nav>
+    </div>
+</header>

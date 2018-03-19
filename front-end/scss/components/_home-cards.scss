@@ -1,0 +1,38 @@
+.home-cards {
+  margin: 50px 10px;
+
+  &__box {
+    max-width: 350px;
+    margin: 30px auto;
+    border-radius: 15px;
+  }
+
+  &__box:hover {
+    background-color: $primary-cl;
+    color: $white;
+    border: 1px solid $base-cl;
+    box-shadow: 5px 10px 15px grey;
+  }
+
+  img {
+    width: 250px;
+    height: 200px;
+    margin: 10px auto;
+    margin-top: 50px;
+    -webkit-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+  }
+
+  img:hover {
+   -webkit-transition: all 500ms ease-in;
+   -webkit-transform: scale(1.1);
+   -ms-transition: all 500ms ease-in;
+   -ms-transform: scale(1.1);
+   -moz-transition: all 500ms ease-in;
+   -moz-transform: scale(1.1);
+   transition: all 500ms ease-in;
+   transform: scale(1.1);
+  }
+}

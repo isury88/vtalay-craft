@@ -25,7 +25,7 @@ return array(
 	'tablePrefix' => 'craft',
 
 
-
+	//
 	// // The database server name or IP address. Usually this is 'localhost' or '127.0.0.1'.
 	// 'server' => 'localhost',
 	//

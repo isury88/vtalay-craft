@@ -1,4 +1,22 @@
-<div class="container" style="margin-top: 100px;">
-  {{entry.title}}
-  {{entry.body}}
+<div class="container [ about ]" style="margin-top: 100px;">
+
+  <div class="row">
+
+    <div class="col-xs-12 col-sm-7">
+      <div class="about__copy">
+        <h1>{{entry.title}}</h1>
+        {{entry.body}}
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-5 about__profile-img">
+      {% for image in entry.imageField %}
+          <img class="img-fluid" src="{{image.getUrl}}" alt="">
+      {% endfor %}
+    </div>
+
+
+  </div>
+
+
 </div>

@@ -1,0 +1,22 @@
+.about {
+
+  padding-top: 25px;
+  justify-content: space-between;
+
+  &__copy {
+    font-size: 18px;
+    font-family: $copy-font;
+
+    h1 {
+      font-family: $secondary-font;
+      font-size: 28px;
+    }
+
+  }
+
+  &__profile-img img {
+    text-align: right;
+    padding:15px;
+  }
+
+}
